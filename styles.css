@@ -1,0 +1,220 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    color: #4A4A4A;
+    margin: 0;
+    padding: 0;
+    background-color: #F3F1E7;
+}
+
+header {
+    padding: 15px;
+    background-color: #A8D5BA; /* Soft Sage Green */
+    overflow: hidden; /* Ensures floating elements are contained */
+}
+
+.brand {
+    font-size: 26px;
+    font-weight: bold;
+    color: #6F9B7A; /* Moss Green */
+    float: left;
+}
+
+.brand span {
+    color: #F5F5F5;
+}
+
+nav {
+    float: right;
+}
+
+nav a {
+    display: inline-block;
+    margin-left: 20px;
+    text-decoration: none;
+    color: #F5F5F5; /* Off-White */
+    font-weight: 600;
+}
+
+.hero-section {
+    background-color: #A8D5BA; /* Soft Mint Green */
+    overflow: hidden; 
+    background-image: url(landing.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height:600px;
+   
+    text-align: left;
+}
+
+.hero-content {
+    padding: 60px;
+    width: 50%; /* Ensure content stays to the left side */
+}
+
+.hero-content h1 {
+    font-size: 38px;
+    color: #F5F5F5;
+}
+
+.hero-content p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #F5F5F5;
+}
+
+.hero-content p span,
+.hero-content h1 span {
+    color: #6F9B7A;
+}
+
+.movie-select {
+    margin-top: 25px;
+}
+
+.movie-select select {
+    padding: 12px;
+    font-size: 16px;
+}
+
+.explore-btn {
+    margin-top: 120px;
+}
+
+.movie-select button {
+    padding: 10px 25px;
+    background-color: #6F9B7A; /* Moss Green */
+    color: #F5F5F5; /* Off-White */
+    border: none;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.movie-collection {
+    padding: 60px;
+    text-align: center;
+    background-color: #C4E1C1; /* Soft Sage Green */
+}
+
+.movie-collection h2 {
+    font-size: 34px;
+    color: #fff;
+}
+
+.movie-collection h2 span {
+    color: #6F9B7A;  /* Deep Sage Green */
+}
+
+.movie-collection p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+/* Floating the film cards to create a layout without flexbox/grid */
+.film-card {
+    width: 28%;
+    margin: 2%;
+    text-align: left;
+    padding: 15px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.film-card img {
+    width: 100%;
+    height: 220px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+.film-card h3 {
+    font-size: 22px;
+    color: #6F9B7A; /* Deep Sage Green */
+}
+
+.film-card p {
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.learn-more {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 20px;
+    background-color: #6F9B7A; /* Deep Sage Green */
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contact-us {
+    padding: 60px;
+    background-color: #C4E1C1;/* Soft Sage Green */
+    text-align: center;
+}
+
+.contact-us h2 {
+    font-size: 34px;
+    color: #fff;
+}
+
+.contact-us h2 span {
+    font-size: 34px;
+    color: #6F9B7A; /* Deep Sage Green */
+}
+
+.contact-us p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+form input[type="text"],
+form select {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+form button[type="submit"] {
+    padding: 12px 30px;
+    background-color: #6F9B7A; /* Deep Sage Green */
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #A8D5BA;/* Soft Sage Green */
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}
+
+/* Clearfix hack to contain floated elements */
+.movie-collection::after, 
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
